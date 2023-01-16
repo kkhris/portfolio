@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./about.html">
+				</el-tab-pane>
+				<el-tab-pane label="CONTACT" name="./works.html"></el-tab-pane>
+			</el-tabs>
+			<!-- Content 1 -->
+			<div style="margin: 3vw 0px 14vw 0px;">
+				<div><img src="img/collection/pj1.JPG" style="width: 100%;border: 1px solid #d8d9da;" /></div>
+				<div class="title" style="margin: 2vw 0vw 3.2vw 0vw;"> <strong>CHRISTOPHER'S COLLECTIONS</strong></div>
+				<div style="display: flex;justify-content: space-between;">
+					<div class="div1">
+						<em>
+							<h2 class="title2">Role</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';letter-spacing: 0.05vw; font-size: 1.4vw;">Graphic
+							Designer</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Deliverable</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';font-size: 1.4vw; letter-spacing: 0.05vw;">Logos, A
+							Poster, and An Animation</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Duration</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';font-size: 1.4vw; letter-spacing: 0.05vw;"> 3 weeks on
+							the entire project, 1 week for each deliverable</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 内容2 -->
+			<div style="padding-top:5vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 38%;">
+					<div class="title">Project Brief</div>
+					<p class="div2_P">
+						Personal logo, poster, and animation based on client’s personal statements - including his
+						personality, experiences and expectation for this project.
+						<br> <br>
+						<a
+							href="https://www.dropbox.com/scl/fi/u2eiut41rduoyf75b5qoe/Christopher-Personal-Branding-Statement.docx?dl=0&amp;rlkey=t4drga1xs1qz2gjn13a4q4bv8">
+							Check out Christopher’s story here.</a>
+					</p>
+					<div class="title" style="margin-top: 4vw;">Project Goal</div>
+					<p class="div2_P"> Expressing client’s personality through eye-catching, stylish designed
+						deliverables based on his own experience. </p>
+				</div>
+				<div style="width: 55%; margin-top: 1vw;"><img src="img/collection/pj4.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Content 3 -->
+			<div style="padding-top:2vw;margin-bottom: 14vw;" class="page_mark">
+				<div class="title">The Problem</div>
+				<p class="div2_P"> 1. Limited information received from the client, who also has no specific requirement
+					for the final
+					products <br> 2. Not able to reach out to the client directly, only able to design based on the
+					story
+				</p>
+			</div>
+
+			<!-- Content 4 -->
+			<div style="padding-top:4vw; margin-bottom: 14vw;" class="page_mark">
+				<div class="title">Personal Logo Design</div>
+				<div><img src="img/collection/pj2.png" style="width: 100%;" /></div>
+				<div>
+					<p class="div4_P"> The logo is in a box-like shape inspired by <strong>Pandora’s Box</strong>.
+						Christopher is
+						concerned about switching to a new program since his original programs has more perspectives.
+						Pandora’s Box creates lots of<strong> unexpected problems</strong>, just like the situations
+						indicated in the client brief. Moreover, the last and only thing left in the Pandora’s box is
+						<strong>“hope,”</strong> which is also the reason why I chose to use <strong>saturated colours
+							and intense fonts</strong> for the logos
+					</p>
+				</div>
+			</div>
+
+			<!-- 内容5 -->
+			<div style="padding-top:4vw; margin-bottom: 14vw;" class="page_mark">
+				<div class="title">Poster Design</div>
+				<div style="margin-left: -2.4vw;" ><img src="img/collection/pj5.png" style="width: 101%;" /></div>
+				<div>
+					<p class="div4_P">
+						The posters is inspired by <strong>cyberpunk</strong> and <strong>glitch arts</strong>. There
+						are lots of purposely distortions applied to the poster design to reflect Christopher’s
+						uncertainty in life. The poster is based on Christopher’s past experiences as an engineering
+						student : struggling with STEM courses and exploring what he really likes. Therefore, the colour
+						choices for the poster are comparatively monotoned, expressing his <strong>anxiety and
+							uncertainty.</strong>
+					</p>
+				</div>
+			</div>
+
+			<!-- 内容6 -->
+			<div style="padding-top:3.5vw; margin-bottom: 14vw;" class="page_mark">
+				<div class="title" style="margin-bottom: 1.5vw;">Animation Design</div>
+				<div style="display: flex;justify-content: space-between;">
+					<div style="width: 35%; margin-top: 1vw;"><img src="img/collection/pj3.gif" style="width: 94%;" />
+					</div>
+					<div style="width: 50%;">
+						<p class="div4_P" style="margin-top: 0vw;">
+							The keywords of my design are intense and impressive. Thus, I picked two bright
+							complementary colours in order to create the gradual tension. In order to create the
+							contrast, I used a dark background colour for the first 4 seconds and replaced it with a
+							light and bright background in pink and green afterward. I aimed to capture his
+							transformative experience (changing his major from Engineering to a design-focused degree)
+							through my animation. Engineering is more academic and informative compared to an arts
+							program; thus, the background colour I used at the beginning is relatively plain and
+							achromatic. However, designing is comparative, flexible, and energetic compared to
+							engineering; thus, I wanted to juxtapose the neutral colour with a bright colour.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 底部 -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Let's Get In Touch!</div>
+				<div style="margin-top: 1vw;">
+					<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">LinkedIn↗</a>
+					<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">Email↗</a>
+				</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2022
+					<a href="" @click="totop()"
+						style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</a>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html"
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					totop() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+					}
+
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			.title {
+				font-weight: 600;
+				font-size: 1.85vw;
+				font-family: 'Avenir Medium';
+				letter-spacing: 0.2vw;
+				margin: 0.5vw 0vw;
+				line-height: 3.5vw;
+			}
+
+			.title2 {
+				color: #3E3E3E;
+				text-align: left;
+				letter-spacing: 0.1vw;
+				font-size: 1.5vw;
+				font-family: 'Avenir Medium';
+				margin: 0.1vw 0vw;
+			}
+
+			.div1 {
+				width: 30%;
+				margin-top: -2vw;
+			}
+
+			.div2_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+			}
+
+			.div4_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+				margin: 2vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+		</style>
+	</body>
+</html>

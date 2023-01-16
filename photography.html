@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+
+	<body style="padding: 0 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./about.html">
+				</el-tab-pane>
+				<el-tab-pane label="CONTACT" name="./works.html"></el-tab-pane>
+			</el-tabs>
+			<!-- 内容1 -->
+			<div style="display: flex;justify-content: space-between;margin-top: 4vw;">
+				<div style="display: flex;align-items: center;width:55%;">
+					<div style="width:30%;">
+						<div class="tograyscaleParent" style="margin: 1vw 0px;">
+							<!-- Picture 1 -->
+							<img style="width: 100%;" src="img/photography/Frontpage/VOL. 223.jpg" class="tograyscale"
+								onclick="ImgDetail('img/photography/Frontpage/VOL. 223.jpg')" />
+						</div>
+						<div class="tograyscaleParent" style="margin: 1vw 0px;">
+							<img style="width: 100%;" src="img/photography/Frontpage/ts2.png" class="tograyscale"
+								onclick="ImgDetail('img/photography/Frontpage/ts2.png')" />
+						</div>
+					</div>
+					<div style="width:39%;">
+						<div class="tograyscaleParent" style="margin: 1vw;">
+							<!-- Picture 2 -->
+							<img style="width: 100%;" src="img/photography/Frontpage/1723 8121.png"
+								onclick="ImgDetail('img/photography/Frontpage/1723 8121.png')" class="tograyscale" />
+						</div>
+					</div>
+					<div style="width:30%;">
+						<div class="tograyscaleParent" style="margin: 1vw;">
+							<!-- Picture 3 -->
+							<img style="width: 100%;" src="img/photography/Frontpage/1.png"
+								onclick="ImgDetail('img/photography/Frontpage/1.png')" class="tograyscale" />
+						</div>
+
+						<div class="tograyscaleParent" style="margin: 1vw;">
+							<!-- Picture 4 -->
+							<img style="width: 100%;" onclick="ImgDetail('img/photography/Frontpage/4.png')"
+								src="img/photography/Frontpage/4.png" class="tograyscale" />
+						</div>
+					</div>
+				</div>
+				<!-- Front Page text -->
+				<div style="width:30%; margin-right: 5vw;">
+					<div style="text-align: left; margin: 5.5vw 0vw 0vw; font-size: 2vw;font-family: Avenir Light; letter-spacing: 0.1vw;">
+						I enjoy doing</div>
+					<div
+						style="text-align: left; margin: 0.5vw 0vw;font-weight: 700;font-size: 2.2vw;font-family: futura-pt, sans-serif;">
+						portait photography</div>
+					<div style="margin-bottom: 6vw; text-align: left; font-size: 2vw;font-family: Avenir Light;">
+						after school / work </div>
+					<div style="margin-bottom: 1vw; font-weight: 700;font-size: 1.8vw;font-family: Avenir Light;">
+						My works have been: </div>
+					<div style="font-weight: 700;font-size: 1.3vw;font-family: Avenir Light;">
+						· Exhibited in the Polygon Gallery </div>
+					<div style="margin: 1.5vw 0vw;font-weight: 700;font-size: 1.3vw;font-family: Avenir Light;">
+						· Featured on three 100k+ magazines </div>
+
+					<div style="font-weight: 700;font-size: 1.2vw;font-family: Avenir Light;">
+						← Click and view my published works! </div>
+				</div>
+			</div>
+
+			<!--内容2-->
+			<div class=" page_mark">
+				<div
+					style="padding: 4vw 10vw 0vw; font-weight: 700; margin-top:14vw;font-size: 1.3vw; font-family: Avenir Light;">
+					<div style="text-align: left;">I love trying new styles and exploring new settings with my clients,
+						and I enjoy revealing their
+						unique
+						personalities though photographs.</div>
+				</div>
+				<div class="container5" style="position: relative;" onmouseenter="imgMouseenter()"
+					onmouseleave="imgMouseleave()">
+					<button id="leftBtn" style="z-index: 90;display: none;" class="left_btn"
+						onclick="toLeft()">&lt;</button>
+					<div id="imgPage1" style="display: block;" class="imgPageBox">
+						<div class="containerpictures">
+							<div class="container5p1 imgPage">
+								<img src="img/photography/Slideshow/G2.png" alt="c1" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C2B.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/C2.png" alt="c2" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C4B.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/C3.png" alt="c3" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C3B.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/C4.png" alt="c4" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C5B.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/C5.png" alt="c4" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/G2B.png')">
+							</div>
+						</div>
+					</div>
+					<div id="imgPage2" style=" display: none;" class="imgPageBox">
+						<div class="containerpictures2">
+							<div class="container5p1 imgPage">
+								<img src="img/photography/Slideshow/ok.png" alt="c1" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C2.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/Christine Color.png" alt="c2" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C4.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/BWP4 Color.png" alt="c3" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C3.png')">
+							</div>
+							<div class="container5p2 imgPage">
+								<img src="./img/photography/Slideshow/nadia.jpeg" alt="c4" class="tograyscale"
+									onclick="ImgDetail('./img/photography/Slideshow/C5.png')">
+							</div>
+						
+						</div>
+					</div>
+					<button id="rightBtn" onclick="toRight()" class="right_btn" style="z-index: 90;">&gt;</button>
+				</div>
+				<div style="font-weight: 700; font-size: 2.2vw; margin-top: 4vw;font-family: futura-pt, sans-serif;">
+					Clients' Projects</div>
+				<div
+					style="font-weight: 700; margin-top:1vw; margin-left:0vw; font-size: 1.3vw; font-family: Avenir Light;">
+					I love trying new styles and exploring new settings with my clients</div>
+			</div>
+
+
+
+			<!--内容3-->
+			<div style=" padding: 7vw 0vw; display: flex;margin-top: 15vw;" class=" page_mark">
+				<div style="width: 40%;">
+					<div style="margin-top:6vw;font-weight: 700;font-size: 2vw;font-family: Avenir Light;">
+						I also do</div>
+					<div style="font-weight: 700;margin: 0.5vw 0vw;font-size: 2.2vw;font-family: futura-pt, sans-serif;">
+						event photography</div>
+					<div style="font-weight: 700;margin: 0.5vw 0vw;font-size: 2vw;font-family: Avenir Light;">
+						during summer </div>
+
+					<div style="font-weight: 700;font-size: 1.8vw;font-family: Avenir Light;margin: 6vw 0vw 0.5vw;">
+						I shot for: </div>
+
+					<div style="font-weight: 700; margin:0.5vw 0vw; font-size: 1.3vw;font-family: Avenir Light;">
+						· Graduation ceremonies </div>
+					<div style="margin-bottom: 0.5vw;font-weight: 700;font-size: 1.3vw;font-family: Avenir Light;">
+						· Promenade dances </div>
+
+					<div style="font-weight: 700;font-size: 1.2vw;font-family: Avenir Light;">
+						&nbsp Click and view my works! → </div>
+				</div>
+				<div style="display: flex; margin-left:-1vw; width: 60%;align-items: center;">
+					<div style="width: 51%;">
+						<!-- Picture 1 -->
+						<img src="img/photography/Graduation/3.JPG"
+							onclick="ImgDetail('img/photography/Graduation/3.JPG')"
+							style="width: 100%;border: 1px solid #e4e7ed;border-radius: 0vw;" class="tograyscale" />
+					</div>
+
+					<div style="width: 45%;">
+						<!-- Picture 2 -->
+						<img src="img/photography/Graduation/2.png"
+							onclick="ImgDetail('img/photography/Graduation/2.png')"
+							style="margin: 1vw;width: 100%;border: 1px solid #e4e7ed;border-radius: 0vw;"
+							class="tograyscale" />
+
+						<!-- Picture 3 -->
+						<img src="img/photography/Graduation/1.png"
+							onclick="ImgDetail('img/photography/Graduation/1.png')"
+							style="margin: 1vw;width: 100%;border: 1px solid #e4e7ed;border-radius: 0vw;"
+							class="tograyscale" />
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 底部 -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw; margin-top: 14vw;">
+					Let's Get In Touch!</div>
+				<div style="margin-top: 1vw;">
+					<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">LinkedIn↗</a>
+					<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">Email↗</a>
+				</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2022
+					<a href="" @click="totop()"
+						style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</a>
+				</div>
+			</div>
+		</div>
+		<!-- 图片弹框 -->
+		<div id="modalImgPage" class="modal" style="display: none;">
+			<div class="popup">
+				<span class="close" onclick="closeImgPop('modalImgPage')">&times;</span>
+				<div class="content"
+					style="display: flex;text-align: center;overflow: hidden;justify-content: space-evenly;">
+					<a style="margin-top: 6vw;" onclick="window.open('https://www.magcloud.com/browse/issue/2182293')">
+						<p class="gcontainer1">Dreamy Magazine</p>
+						<p class="gcontainer2">Issue 427 2022</p>
+						<a>
+							<img src="" alt="Pic1" style="height: 30vw;margin: 0.1vw 0vw;" id="modalImgPageSrc">
+				</div>
+
+
+				<!-- <div class="Nextcontainerlast">
+					<a href="#modal3">
+						<img src="../small-arrow-icon-2.png" alt="Pic1" class="arrowpreviouslast">
+						<div class="overlayprevious">
+							<img src="../small-arrow-icon-2.png" alt="Pic1" class="arrowpreviouslastoverlay">
+						</div>
+					</a>
+				</div> -->
+
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			function ImgDetail(url) {
+				console.info(url)
+				var modalImgPageSrc = document.getElementById('modalImgPageSrc');
+				modalImgPageSrc.src = url;
+				var modalImgPage = document.getElementById('modalImgPage');
+				modalImgPage.style.display = "block"
+			}
+
+			function closeImgPop(status) {
+				var statusEl = document.getElementById(status);
+				statusEl.style.display = 'none'
+			}
+
+			var currentPage = 1;
+			var pageTotal = 2
+			var timer = null; //定时器
+
+			function toRight() {
+				currentPage++;
+				if (currentPage == pageTotal) {
+					document.getElementById('rightBtn').style.display = "none";
+				}
+				document.getElementById('leftBtn').style.display = "block";
+				showImg('r')
+			}
+
+			function toLeft() {
+				currentPage--;
+				if (currentPage == 1) {
+					document.getElementById('leftBtn').style.display = "none";
+				}
+				document.getElementById('rightBtn').style.display = "block";
+				showImg('l')
+			}
+
+			function showImg(status) {
+				for (var i = 0; i < pageTotal; i++) {
+					if ((i + 1) == currentPage) {
+						(document.getElementById('imgPage' + (i + 1)).style)['z-index'] = "3";
+						document.getElementById('imgPage' + (i + 1)).style.display = "block";
+						if (status == 'r') {
+							document.getElementById('imgPage' + (i + 1)).classList.add("showDiv");
+							document.getElementById('imgPage' + (i + 1)).classList.remove("noDiv");
+						} else {
+							document.getElementById('imgPage' + (i + 1)).classList.add("noDiv");
+							document.getElementById('imgPage' + (i + 1)).classList.remove("showDiv");
+						}
+
+					} else {
+
+						(document.getElementById('imgPage' + (i + 1)).style)['z-index'] = "2";
+						if (status == 'r') {
+							document.getElementById('imgPage' + (i + 1)).classList.add("noDiv");
+							document.getElementById('imgPage' + (i + 1)).classList.remove("showDiv");
+						} else {
+							document.getElementById('imgPage' + (i + 1)).classList.add("showDiv");
+							document.getElementById('imgPage' + (i + 1)).classList.remove("noDiv");
+						}
+						closePage('imgPage' + (i + 1))
+
+					}
+				}
+			}
+
+			function closePage(str) {
+				setTimeout(function() {
+					document.getElementById(str).style.display = "none";
+				}, 3000);
+			}
+
+			function imgPlay() { //使用定时器实现每隔5秒自动切换图片
+				timer = setInterval(function() {
+					if (currentPage == pageTotal) {
+						toLeft();
+					} else {
+						toRight();
+					}
+				}, 6000);
+			}
+
+			function imgMouseenter() { //鼠标移到图片上停止图片切换
+				clearInterval(timer);
+			}
+
+			function imgMouseleave() { //鼠标移开图片后继续自动切换图片
+				imgPlay();
+			}
+			imgPlay(); //调用自动切换图片函数
+		</script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html",
+						counter: 0
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					toPage(url) {
+						document.location.href = url
+					},
+					totop() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+					}
+				},
+				mounted() {}
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: #00000099;
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color: #00000099;
+			}
+
+			.btn {
+				width: 18vw;
+				height: 0vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 2vw 0vw;
+				border-radius: 10px;
+			}
+
+			.btn1 {
+				width: 18vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 1vw 0vw 0vw;
+				padding: 2vw 2vw;
+				border-radius: 10px;
+				background-color: #f7f5f4;
+			}
+
+			.tograyscaleParent {
+				/* background: #1e1e1e; */
+			}
+
+			.tograyscale {
+				filter: grayscale(1);
+			}
+
+			.tograyscale:hover {
+				cursor: pointer;
+				filter: grayscale(0);
+				box-shadow: 3px 3px 6px 2px #ccc7c7;
+			}
+
+			/* 轮播图 */
+			::-webkit-scrollbar {
+				display: none;
+			}
+
+			.showDiv {
+				animation: bounceInLeft 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 alternate forwards;
+				-webkit-animation: bounceInLeft 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 alternate forwards;
+				/*Safari and Chrome*/
+			}
+
+			@keyframes bounceInLeft {
+				0% {
+					opacity: 0;
+					transform: translate3d(-3000px, 0, 0);
+				}
+
+				100% {
+					transform: none;
+				}
+			}
+
+			.noDiv {
+				animation: bounceInRight 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 alternate forwards;
+				-webkit-animation: bounceInRight 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 alternate forwards;
+				/*Safari and Chrome*/
+			}
+
+			@keyframes bounceInRight {
+				0% {
+					opacity: 0;
+					transform: translate3d(3000px, 0, 0);
+				}
+
+				100% {
+					transform: none;
+				}
+			}
+
+			.imgPage:hover {
+				cursor: pointer;
+				filter: grayscale(0);
+				box-shadow: 3px 3px 6px 2px #ccc7c7;
+
+			}
+
+			.container5 {
+				display: grid;
+				background-color: transparent;
+				width: 100%;
+				height: 23vw;
+				margin: 5vw 0vw 0vw -4vw;
+			}
+
+			.containerpictures {
+				margin-left: 2vw;
+				display: grid;
+				height: 20vw;
+				background-color: transparent;
+				/* overflow-y: clip; */
+				grid-template-columns: 16% 16% 40% 16% 14%;
+				grid-template-rows: 22vw;
+				gap: 0.8vw;
+				padding: 1vw;
+			}
+
+			.containerpictures2{
+				margin-left: 2vw;
+				display: grid;
+				height: 20vw;
+				background-color: transparent;
+				/* overflow-y: clip; */
+				grid-template-columns: 20% 40% 20% 20% 20%;
+				grid-template-rows: 22vw;
+				gap: 1vw;
+				padding: 1vw;
+			}
+
+			.container5p1 {
+				background-color: transparent;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				overflow-x: hidden;
+			}
+
+			.container5p2 {
+				background-color: transparent;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				overflow-x: hidden;
+			}
+
+			.c1 {
+				height: 100%;
+			}
+
+			.c2 {
+				height: 100%;
+			}
+
+			.left_btn {
+				cursor: pointer;
+				position: absolute;
+				top: 48%;
+				left: 7px;
+				width: 40px;
+				height: 40px;
+				background-color: #ffffffcf;
+				font-size: 18px;
+				border-radius: 50%;
+			}
+
+			.right_btn {
+				cursor: pointer;
+				border-radius: 50%;
+				position: absolute;
+				top: 48%;
+				right: -6vw;
+				width: 40px;
+				height: 40px;
+				background-color: #ffffffcf;
+				font-size: 18px;
+			}
+
+			.imgPageBox {
+				position: absolute;
+				background-color: transparent;
+			}
+
+			/* 图片弹框 */
+			.modal {
+				display: none;
+				position: fixed;
+				top: -3vw;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: transparent;
+				z-index: 99;
+
+			}
+
+			.modal:target {
+				display: block;
+				z-index: 1;
+				background-color: #FFFFFF95;
+			}
+
+			.modalgrad {
+				display: none;
+				position: fixed;
+				top: 110vw;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: transparent;
+			}
+
+			.modalgrad:target {
+				display: block;
+				z-index: 1;
+				background-color: indianred;
+			}
+
+			.popup {
+				padding: 2vw;
+				background: #fff;
+				border-radius: 2vw;
+				width: 60vw;
+				height: 26vw;
+				margin: 10vw 20vw;
+				position: relative;
+				border: 0.12vw solid #CECECE;
+			}
+
+			.popup .close {
+				position: absolute;
+				top: 2vw;
+				right: 3vw;
+				transition: all 200ms;
+				font-size: 3vw;
+				font-weight: bold;
+				text-decoration: none;
+				color: #333;
+			}
+
+			.popup .close:hover {
+				color: darkgray;
+			}
+
+			.popup .content {
+				max-height: 100%;
+				overflow: auto;
+			}
+
+			.popup .gcontainer1 {
+				color: #28282B;
+				text-align: center;
+				font-size: 2vw;
+				font-family: futura-pt, sans-serif;
+				width: 17vw;
+			}
+
+			.popup .gcontainer2 {
+				color: #6e6e76;
+				text-align: center;
+				letter-spacing: 0.2vw;
+				font-size: 1vw;
+				font-family: futura-pt, sans-serif;
+			}
+
+		</style>
+
+	</body>
+</html>
