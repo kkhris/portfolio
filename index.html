@@ -19,7 +19,7 @@
 				</el-tab-pane>
 				<el-tab-pane label="ABOUT" name="./about.html">
 				</el-tab-pane>
-				<el-tab-pane label="CONTACT" name="./works.html"></el-tab-pane>
+				 <el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
 			</el-tabs>
 			<div style="text-align: center;padding-right: 5%;">
 				<!-- 内容板块1 -->
@@ -57,7 +57,7 @@
 						<a href="#b3" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳ NEXT
 							PROJECT</a>
 					</div>
-				</div>
+				</div>$scrollToTo
 				<!-- 内容板块3 -->
 				<div id="b3" style="padding-bottom: 10vw;" class="page_mark">
 					<div style="padding-top: 3vw;">
@@ -117,7 +117,7 @@
 					</div>
 					<div style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">© Coded and Designed by Christal Lyu,
 						Singapore 2022
-						<a href="" @click="totop()" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑ BACT TO TOP</a>
+						<a href="" @click="$scrollToTop" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑ BACT TO TOP</a>
 					</div>
 				</div>
 			</div>
@@ -139,23 +139,31 @@
 					toPage(url){
 						document.location.href = url
 					},
-					totop() {
-						document.body.scrollTop = 0;
-						document.documentElement.scrollTop = 0;
-					}
+					
+					scrollToTop() {
+    				window.scrollTo(0,0);
+					behavior: 'smooth'
+  					}
 				},
 				mounted() {}
 			};
 			Vue.createApp(App).use(ElementPlus).mount('#app');
+
+
 		</script>
 		<style scoped>
+
 			.el-tabs__item.is-active {
-				color: #00000099;
+				color: rgb(72, 71, 71);
 				font-weight: 600;
 			}
 
 			.el-tabs__active-bar {
-				background-color: #00000099;
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
 			}
 
 			.btn {
@@ -186,6 +194,8 @@
 				opacity: 0.6;
 				filter: alpha(opacity=60);
 			}
+
+			
 		</style>
 	</body>
 </html>

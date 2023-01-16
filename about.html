@@ -20,7 +20,7 @@
 				</el-tab-pane>
 				<el-tab-pane label="ABOUT" name="./about.html">
 				</el-tab-pane>
-				<el-tab-pane label="CONTACT" name="./works.html"></el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
 			</el-tabs>
 			<div>
 				<div>
@@ -30,7 +30,7 @@
 					<div>
 						<div
 							style="margin-left: 0.2vw; font-size: 1.4vw; margin-top:0.6vw; font-family: 'Avenir Light'; letter-spacing: 0.1vw;">
-							<a href="" onclick="window.open('img/about/CHRISTAL LYU RESUME 2022.pdf')"> View my Resume ↗
+							<a href="" onclick="window.open('img/about/CHRISTAL LYU RESUME 2023.pdf')"> View my Resume ↗
 							</a>
 						</div>
 					</div>
@@ -181,6 +181,19 @@
 			Vue.createApp(App).use(ElementPlus).mount('#app');
 		</script>
 		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+
 			.btn {
 				width: 15vw;
 				height: 1vw;
