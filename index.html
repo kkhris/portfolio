@@ -12,62 +12,74 @@
 		<!-- Import component library -->
 		<script src="//unpkg.com/element-plus"></script>
 	</head>
-	<body style="padding: 0 10%;overflow: inherit;" >
+	<body style="padding: 0 10%;overflow: inherit;">
 		<div id="app">
-			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header" style = "padding-top:2vw; font-family: 'Avenir Medium';">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
 				<el-tab-pane label="WORKS" name="./index.html">
 				</el-tab-pane>
 				<el-tab-pane label="ABOUT" name="./about.html">
 				</el-tab-pane>
-				 <el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
 			</el-tabs>
 			<div style="text-align: center;padding-right: 5%;">
 				<!-- 内容板块1 -->
 				<div style="padding-bottom: 10vw;">
-					<div><img src="./img/index/better small.gif" style="width: 30%;height:37.5vw;margin-top: -4vw;" /></div>
-					<div style="font-weight: 700;font-size: 2.2vw;margin-top: -7vw;font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">HELLO! MY NAME IS CHRISTAL:)</div>
-					<div style="font-size: 1.2vw; line-height: 2.5vw;margin-top: 1vw;font-family: 'Avenir Light';">I am a UX designer by day, portrait photographer at night.<br />
+					<div><img src="./img/index/better small.gif" style="width: 30%;height:37.5vw;margin-top: -4vw;" />
+					</div>
+					<div
+						style="font-weight: 700;font-size: 2.2vw;margin-top: -7vw;font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+						HELLO! MY NAME IS CHRISTAL:)</div>
+					<div style="font-size: 1.2vw; line-height: 2.5vw;margin-top: 1vw;font-family: 'Avenir Light';">I am
+						a UX designer by day, portrait photographer at night.<br />
 						Based in Vancouver, British Columbia.
 					</div>
-						<!-- <div style="font-size: 1vw;margin-top: 0.5vw;">Based in Vancouver, British Columbia.</div> -->
+					<!-- <div style="font-size: 1vw;margin-top: 0.5vw;">Based in Vancouver, British Columbia.</div> -->
 					<div style="margin-top: 2vw;">
-						<el-button class="btn" onclick="toBottom()">Jump to my Projects</el-button>
-						<el-button class="btn"  @click="toPage('./photography.html')" >Jump to my Photographs</el-button>
+						<el-button style="cursor: pointer;" class="btn" onclick="toBottom()">Jump to my Projects</el-button>
+						<el-button style="cursor: pointer;" class="btn" @click="toPage('./photography.html')">Jump to my Photographs</el-button>
 					</div>
 				</div>
 				<!-- 内容板块2 -->
 				<div id="b2" style="padding-bottom: 10vw;" class="page_mark">
-					<div style="padding-top: 3vw;">
-						<el-divider content-position="left"><span style="margin-left: -3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
-						CHRISTOPHER'S COLLECTIONS</span>
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							CHRISTOPHER'S COLLECTIONS</span>
+						<el-divider>
 						</el-divider>
 					</div>
-					<div @click="toPage('./collection.html')" style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+					<div @click="toPage('./collection.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
 						<img src="./img/index/PJ1.JPG" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
 							class="tograyscale" />
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
-						<el-button class="btn1" >Graphic Design</el-button>
+						<el-button class="btn1">Graphic Design</el-button>
 						<el-button class="btn1">Brand Design</el-button>
 					</div>
 					<div style="margin-top: 1.5vw;text-align: left;">
-						<span style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">Personal Branding Graphic Design Project for
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">Personal
+							Branding Graphic Design Project for
 							Chrisopher Ho</span>
-						<a href="#b3" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳ NEXT
-							PROJECT</a>
+						<a href="#b3"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT PROJECT</a>
 					</div>
-				</div>$scrollToTo
+				</div>
 				<!-- 内容板块3 -->
 				<div id="b3" style="padding-bottom: 10vw;" class="page_mark">
-					<div style="padding-top: 3vw;">
-						
-						<el-divider content-position="left"><span style="margin-left: -3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">ENHANCE VERSION OF UBEREATS
-								APP</span> 
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							VERSION OF UBEREATS APP</span>
+						<el-divider>
 						</el-divider>
-					
 					</div>
-					<div  @click="toPage('./uber.html')" style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+					<div @click="toPage('./uber.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
 						<img src="./img/index/PJ2.png" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
 							class="tograyscale" />
@@ -78,19 +90,26 @@
 						<el-button class="btn1">Design Thinking</el-button>
 					</div>
 					<div style="margin-top: 1.5vw;text-align: left;">
-						<span style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;"> An interactive prototype for UberEats APP</span>
-						<a href="#b4" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳ NEXT
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">
+							An interactive prototype for UberEats APP</span>
+						<a href="#b4"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT
 							PROJECT</a>
 					</div>
 				</div>
 				<!-- 内容板块4 -->
 				<div id="b4" style="padding-bottom: 10vw;" class="page_mark">
-					<div style="padding-top: 3vw;">
-						<el-divider content-position="left"><span style="margin-left: -3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">MOTION GRAPHIC
-								PROJECT</span>
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							MOTION GRAPHIC PROJECT</span>
+						<el-divider>
 						</el-divider>
 					</div>
-					<div @click="toPage('./txp.html')" style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+					<div @click="toPage('./txp.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
 						<img src="./img/index/txp.jpg" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
 							class="tograyscale" />
@@ -100,24 +119,34 @@
 						<el-button class="btn1">Graphic Design</el-button>
 					</div>
 					<div style="margin-top: 0.5vw;text-align: left;">
-						<span style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">An animation with a call to action related to Toxic
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">An
+							animation with a call to action related to Toxic
 							Positivity</span>
-						<a href="#foot" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳ NEXT
+						<a href="#foot"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT
 							PROJECT</a>
 					</div>
 				</div>
 				<!-- 底部 -->
-				<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot"  class="page_mark">
-					<div style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">Let's Get In Touch!</div>
+				<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+					<div
+						style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+						Let's Get In Touch!</div>
 					<div style="margin-top: 1vw;">
 						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
-							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">LinkedIn↗</a>
+							style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
 						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
-							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">Email↗</a>
+							style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
 					</div>
-					<div style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">© Coded and Designed by Christal Lyu,
+					<div
+						style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+						© Coded and Designed by Christal Lyu,
 						Singapore 2022
-						<a href="" @click="$scrollToTop" style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑ BACT TO TOP</a>
+						<span href="" @click="scrollToTop"
+							style="text-decoration: underline;font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+							BACT TO TOP</span>
 					</div>
 				</div>
 			</div>
@@ -136,33 +165,33 @@
 					handleClick(e) {
 						document.location.href = e.paneName
 					},
-					toPage(url){
+					toPage(url) {
 						document.location.href = url
 					},
-					
+
 					scrollToTop() {
-    				window.scrollTo(0,0);
-					behavior: 'smooth'
-  					}
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
 				},
 				mounted() {}
 			};
 			Vue.createApp(App).use(ElementPlus).mount('#app');
-
-
 		</script>
 		<style scoped>
-
 			.el-tabs__item.is-active {
 				color: rgb(72, 71, 71);
 				font-weight: 600;
 			}
 
 			.el-tabs__active-bar {
-				background-color:rgb(72, 71, 71);
+				background-color: rgb(72, 71, 71);
 			}
 
-			.el-tabs__item:hover{
+			.el-tabs__item:hover {
 				color: rgb(72, 71, 71);
 			}
 
@@ -185,8 +214,17 @@
 				background-color: #f7f5f4;
 			}
 
+			.btn1~.el-button:focus,
+			.el-button:hover {
+				color: #747579;
+				border-color: #e4e7ec;
+				background-color: #f7f5f4;
+				outline: 0;
+				cursor: auto;
+			}
+
 			.tograyscaleParent:hover {
-				background: #bebebe;
+				background: white;
 			}
 
 			.tograyscale:hover {
@@ -195,7 +233,14 @@
 				filter: alpha(opacity=60);
 			}
 
-			
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
 		</style>
 	</body>
 </html>
