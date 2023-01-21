@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./About.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+
+			<!-- 内容1 -->
+			<div style="margin: 3vw 0px 14vw 0px;">
+				<div><img src="./img/uber/pj1.png" style="width: 100%;border: 1px solid #d8d9da;" /></div>
+				<a href="https://xd.adobe.com/view/8db6f281-62bb-485b-a7c3-f1a0bfb05bde-d8e5/"><div class="title" style="margin: 2vw 0vw 3.2vw 0vw;">ENHANCE VERSION OF UBER EATS APP</div> </a>
+				<div style="display: flex;justify-content: space-between;">
+					<div class="div1">
+						<em>
+							<h2 class="title2">Role</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';letter-spacing: 0.05vw; font-size: 1.4vw;">UX Designer</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Deliverable</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';letter-spacing: 0.05vw; font-size: 1.4vw;" >Wireframe and Prototype</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Duration</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';letter-spacing: 0.05vw; font-size: 1.4vw;">OCT 2021 - NOV 2021 (4 weeks) </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 内容2 -->
+			<div style="display: flex;justify-content: space-between;margin-bottom: 10vw;margin-top: 4vw; padding-top: 3.5vw;" class="page_mark">
+				<div style="width: 35%;">
+					<div class="title">Project Brief</div>
+					<p class="div2_P">
+						Wireframe and prototype of the enhanced version of Uber Eats.
+					</p>
+					<div class="title" style="margin-top: 4vw;">Project Goal</div>
+					<p class="div2_P"> Create new features for Uber Eat to increase user experience. </p>
+				</div>
+				<div style="width: 63%;"><img src="./img/uber/pj2.png" style="width: 100%;" /></div>
+			</div>
+
+			<!-- 内容3 -->
+			<div style="margin-top: -9vw; margin-bottom: 10vw;">
+				<div class="title">Target Users</div>
+				<p class="div2_P">
+					1. People who are busy deciding what they should eat and people who are indecisive <br> 2. People who
+					need recommendations for food
+				</p>
+			</div>
+
+			<!-- 内容4 -->
+			<div style="margin-bottom: 14vw;" class="page_mark">
+				<div class="title" style="margin-bottom: 4vw; padding-top: 5vw;">New Features 1: Food Delivery Status </div>
+				<div style="display: flex;justify-content: space-between;">
+					<div style="width: 45%;">
+						<p class="div4_P" style="margin-top: 0vw;">
+							The current version of Uber Eats only provides an estimated time of delivery. Thus,
+							customers are likely to be <strong>irritated by the long waiting time</strong> since
+							they<strong> cannot track the exact status</strong> of their deliveries. Therefore,
+							including a progress bar that displays the remaining time could effectively enhance user
+							experience. The icon at the top of the remaining time countdown timer represents the current
+							status of the food. Including the status of the order could be a user-friendly
+							choice to improve user engagement and reassure the customer that their food is on the way.
+						</p>
+					</div>
+					<div style="width: 50%; margin-top:-2.5vw;"><img src="./img/uber/pj3.png" style="width: 100%;" /></div>
+				</div>
+			</div>
+
+			<!-- 内容5 -->
+			<div style="padding-top: 7vw;margin-bottom: 14vw;" class="page_mark">
+				<div style="display: flex;justify-content: space-between;position: relative;">
+					<div style="width: 42%;">
+						<img src="./img/uber/pj4.png" style="width: 62%;position: absolute;left: -20%; top:-20%" />
+					</div>
+					<div style="width: 50%;">
+						<div class="title" style="margin-bottom: 3vw;">New Features 2: Budget & Expenses </div>
+						<p class="div4_P" style="margin-top: 0vw;font-size: 1.1vw;">
+							To help users from meeting their own financial goals, including a new feature related to budgeting and expenses could be really helpful. 
+							Even though the current version of Uber Eats automatically records and stores users’ past orders, they do not calculate users’ total expenses and generate a periodical bill for users. 
+							Thus, users do not realize that they are overspending until they see their empty bank account. The new feature allows users to set up their weekly, monthly, and annual budgets and visualize the total expenses through a progress bar and line chart. 
+							Users can also find out how much they spend on each meal by checking the transaction history. 
+							Therefore, the budget and expenses feature is a user-friendly feature to help users properly manage their spending. 
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 内容6 -->
+			<div style="padding-top: 4vw;margin-bottom: 14vw;" class="page_mark">
+				<div style="display: flex;justify-content: space-between;position: relative;">
+					<div style="width: 58%;">
+						<div class="title" style="margin-bottom: 3vw;">New Features 3: Magic Food Box  </div>
+						<p class="div4_P" style="margin-top: 0vw;font-size: 1.1vw;">
+							Magic food box is a feature that randomly chooses the user’s next meal based on the time of day, 
+							budget, and any special requests. The feature would be extremely friendly for people who are struggling to make a 
+							decision or are too busy to decide what to eat. Users could access the Magic food box by clicking on the button with 
+							a question mark icon beside the monthly budget progress bar. To adjust the budget of a meal, 
+							users could drag the green dot on the scale bar and customize the values. The remaining monthly budget would
+							 also display on the top of the scale bar. Moreover, users are able to select a type of food that they prefer 
+							 to order and include their requests for food. As shown in the New features C5 and C6, the user is a vegetarian 
+							 with an almond allergy, who prefers American food under 20 dollars. Therefore, the food and drinks recommended by
+							  Magic Food Box are absolutely vegetarian friendly, almond-free, and under 20 dollars.
+
+					</div>
+					<div style="width: 42%;"><img src="./img/uber/pj5.png" style="width: 50%;position: absolute;right: -14%;" /></div>
+				</div>
+			</div>
+
+			<!-- 底部 -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Let's Get In Touch!</div>
+				<div style="margin-top: 1vw;">
+					<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
+					<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
+				</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2022
+					<span  @click="scrollToTop"
+						style="text-decoration: underline;font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</span>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html"
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			.title {
+				font-weight: 600;
+				font-size: 1.85vw;
+				font-family:'Avenir Medium';
+				letter-spacing: 0.2vw;
+				margin: 1.5vw 0vw;
+				line-height: 3.5vw; 
+			}
+
+			.title2 {
+				color: #3E3E3E;
+				text-align: left;
+				letter-spacing: 0.1vw;
+				font-size: 1.5vw;
+				font-family:'Avenir Medium';
+				margin: 0.1vw 0vw;
+			}
+
+			.div1 {
+				width: 30%;
+				margin-top: -2vw;
+			}
+
+			.div2_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+			}
+
+			.div4_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+				margin: 2vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
+		</style>
+	</body>
+</html>
