@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="../index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="../About.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+			<!-- Content 1 -->
+			<div style="margin: 3vw 0px 14vw 0px;">
+				<div><img src="../img/magnet/homepage.png" style="width: 100%;border: 1px solid #d8d9da;" /></div>
+				<a href="https://xd.adobe.com/view/cb089b29-792b-4113-81ad-4e233fc498aa-9e5b/"><div class="title" style="margin: 2vw 0vw 3.2vw 0vw;"> <strong>MAGNET: LINK & GATHERINGS</strong></div></a>
+				<div style="display: flex;justify-content: space-between;">
+					<div class="div1">
+						<em>
+							<h2 class="title2">Role</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';letter-spacing: 0.05vw; font-size: 1.4vw;">UX/UI
+							Designer</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Deliverable</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';font-size: 1.4vw; letter-spacing: 0.05vw;">An interactive prototype</div>
+					</div>
+					<div class="div1">
+						<em>
+							<h2 class="title2">Duration</h2>
+						</em>
+						<div style="font-family: 'Avenir Light';font-size: 1.4vw; letter-spacing: 0.05vw;">Nov 2022 - Jan 2023</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project Brief -->
+			<div style="padding-top:7vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 38%;">
+					<div class="title">Project Brief</div>
+					<p class="div2_P">
+						Tired of posting on confession walls with no replies? 
+                        Disappointed by missed chances for room subleases?
+                        <br> <br>
+                        Don't let opportunities slip away again! Magnet App is here to help, 
+                        sharing event info, connecting you with others for carpooling, subleasing, and more. 
+						<br> <br>
+						<a
+							href="https://xd.adobe.com/view/cb089b29-792b-4113-81ad-4e233fc498aa-9e5b/">
+							Check out the High-Fidelity Prototype here.</a>
+					</p>
+				</div>
+				<div style="width: 55%; margin-top: -2.2vw;"><img src="../img/magnet/poto1.png" style="width: 100%;" />
+				</div>
+			</div>
+
+            <!-- Project Goal -->
+			<div style="padding-top:4vw;display: flex;margin-bottom: 4.0vw;" class="page_mark">
+				<div style="width: 68%;">
+					<div class="title">Project Goal</div>
+					<p class="div2_P"> - Bridging users seeking connections with one another <br>
+						- Increase the success rate of finding a buddy (e.g. for carpool, events.etc) <br>
+						- Develop a platform that delivers real-time event updates
+					</p>
+				</div>
+				<div style="width: 18%; margin-top: 2.2vw; margin-left: 7vw;"><img src="../img/magnet/ok.png" style="width: 100%;" />
+				</div>
+			</div>
+
+            <!-- Target Users -->
+			<div style="padding-top:2vw;margin-bottom: 15vw;">
+				<div style="width: 68%;">
+					<div class="title">Target Users </div>
+				</div>
+				<div style="width: 92%; margin-top: 3.5vw;"><img src="../img/magnet/user.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Research Summary -->
+			<div style="padding-top:4.5vw;margin-bottom: 14vw;" class="page_mark">
+				<div class="title">Research Summary</div>
+                <div style="margin-top: 4vw;"><img src="/img/magnet/6.png" style="width: 97%;" /></div>
+				<p class="div2_P"> <br> 1. Only <u> 3% of people </u> are satisfied with their current methods
+					products <br> 2. More than <u> 33% of people </u> have missed an event for <u>more than 5 times </u>
+                    <br> 3.  <u>Post on social media </u> is the most common ways to finding or connect with people
+				</p>
+			</div>
+
+			<!-- Main Frustrations -->
+			<div style="padding-top:3.5vw; margin-bottom: 15vw;" class="page_mark">
+				<div class="title">Main Frustrations</div>
+				<div style="padding-top:3vw; padding-left:-7vw; padding-bottom: 2vw;"><img src="../img/magnet/3b.png" style="width: 100%;" /></div>
+				<div>
+					<p class="div4_P"> Based on the survey and the user interviews, 
+                        the top 3 frustrations of current networking methods are embarrassments, 
+                        inefficiencies and low successful rates. Overall, these disappointments indicate that 
+                        there are potential improvements that can be made to the current networking methods.
+					</p>
+				</div>
+			</div>
+
+			<!-- Personal Preference Setup -->
+			<div style="padding-top:3.5vw; margin-bottom: 14vw;" class="page_mark">
+				<div class="title" style="margin-bottom: 1.5vw;">Main Features</div>
+				<div style="display: flex;justify-content: space-between;">
+					<div style="width: 55%; margin-top: 1vw; margin-left: -3vw;"><img src="../img/magnet/devices10.png" style="width: 94%;" />
+					</div>
+					<div style="width: 40%;">
+						<p class="div4_P" style="margin-top: 3.5vw; margin-left: 0vw;">
+							<u> <strong> #1. Personal Preference Setup </strong> </u> <br>
+							<br> 
+							Providing users with the ability to <strong> create personalized profiles </strong>
+							in order to  <strong> receive targeted contents</strong> on their account.
+							<br> 
+							<br>
+							Users can customize their preferences by <strong> selecting 
+							preferred categories </strong> in the 'My Preferences' page or by inputting their own category choices.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Calendar Features -->
+			<div style="padding-top:6vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 30%;">
+					<p class="div2_P">
+
+						<u><strong>#2.The Calendar Features</strong> </u>
+
+                        <br> <br>
+						The calendar helps <strong>organize and manage</strong> upcoming and saved events.
+                        
+						<br> <br>
+
+						This calendar uses <strong>color-coding:</strong> <br>
+						
+						blue -> planned events  <br>
+						yellow -> saved events
+
+						<br> <br>
+
+						Event times are also displayed in list, allowing users to easily <strong>identify conflicts 
+						and adjust their schedule.</strong>
+
+					</p>
+				</div>
+				<div style="width: 65%; margin-left: 4vw; margin-top: 2vw;"><img src="../img/magnet/451.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Chat Box -->
+			<div style="padding-top:5.5vw; margin-bottom: 14vw;" class="page_mark">
+				<div style="display: flex;justify-content: space-between;">
+					<div style="width: 55%; margin-top: 1vw; margin-left: -3vw;"><img src="../img/magnet/sw.png" style="width: 94%;" />
+					</div>
+					<div style="width: 40%;">
+						<p class="div4_P" style="margin-top: 3.5vw; margin-left: 0vw;">
+							<u> <strong>#3. Chat Box: Connect with Publishers </strong></u> <br>
+							<br> 
+							Users can easily connect with post publishers by <strong>clicking "I am in!" </strong>button.
+							<br> 
+							<br>
+							They can also leave messages for publishers, 
+							with the option to <strong>include the link of the post they just viewed. </strong>
+							The link will <strong>automatically appear </strong>above the typing space, to help the 
+							publisher understand their inquiry better.
+							<br> 
+							
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Information Architecture -->
+			<div style="padding-top:4vw; margin-bottom: 12vw;" class="page_mark">
+				<div class="title">Information Architecture</div>
+				<div style="margin-left: -1vw;margin-top: 2.5vw;" ><img src="../img/magnet/A4.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Paper Prototype -->
+			<div style="padding-top:3vw; margin-bottom: 14vw;" class="page_mark">
+				<div class="title">Paper Prototype</div>
+				<div style="margin-left: -1vw;margin-top: 2.5vw;" ><img src="../img/magnet/paper.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Design Challenges  -->
+			<div style="padding-top:4vw; margin-bottom: 10vw;" class="page_mark">
+				<div class="title">Design Challenges </div>
+				<div><img src="../img/magnet/proto1.png" style="width: 90%; margin-left: 3vw; margin-top: 0.5vw;" /></div>
+				<div>
+					<p class="div4_P"> Magnet was formerly known as Not Alone, but I changed it to Magnet as as research and 
+						feedback from users revealed that the previous name, Not Alone, sounded more like a dating app. 
+						I also conducted a survey to gather opinions on the names "Buoy" and "Beacon". 
+						According to the survey results, more than 70% of participants perceive "Buoy" as a dating application for men, 
+						while over 60% of respondents associate "Beacon" with an investment banking app.
+					</p>
+				</div>
+			</div>
+
+			<!-- Calendar Features -->
+			<div style="padding-top:4vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 45%;">
+					<p class="div2_P">
+
+						I've been racking my brain for a while trying to think of the perfect name for this app, 
+						and I finally landed on "Magnet" because I believe:
+						<br><br>
+						To connect with a person , or a group of people you want to connect with, 
+						you can position yourself as a "magnet" in your field or industry by consistently making 
+						yourself approachable through networking events or online communities .etc
+						<br>
+						<br>
+						This is the idea behind the name "Magnet" for this application. To build bridges 
+						between people, and bring them together.
+
+					</p>
+				</div>
+				<div style="width: 45%; margin-left: 4vw; margin-top: 2vw;"><img src="../img/magnet/ac.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Design Challenges  -->
+			<div style="padding-top:4vw; margin-bottom: 10vw; " class="page_mark">
+				<div class="title">Learnings and Takeaways </div>
+				<div>
+					<p class="div4_P"> This was my first project as a solo designer, where I conducted thorough user research and analysis to gain a deeper understanding of my users. <br><br>
+
+						I spent a considerable amount of time interviewing users and gathering feedback to understand their needs and preferences. I was surprised to find that each user had a unique perspective and approach to networking. <br><br>
+						
+						I also studied colour psychology in order to find the most fitting colour scheme for the application. This was a challenging task, as colours can evoke different emotions and associations in different people.  
+						As you may aware that I had chosen purple as the primary colour, but later realized it gave the impression of a 
+						beauty product application, which was not the desired outcome. I eventually settled on a colour scheme that I 
+						felt was more appropriate for the networking platform and that would resonate with users.  <br><br>
+
+						Please let me know if you have any suggestions or critiques, I'm open to hear them!
+					</p>
+				</div>
+			</div>
+
+			<!-- Foot -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Let's Get In Touch!</div>
+				<div style="margin-top: 1vw;">
+					<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
+					<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw; font-family: 'Avenir Medium';">Email↗</a>
+				</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2022
+					<span  @click="scrollToTop"
+						style="text-decoration: underline;font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</span>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "../index.html"
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
+
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+			
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			.title {
+				font-weight: 600;
+				font-size: 1.85vw;
+				font-family: 'Avenir Medium';
+				letter-spacing: 0.2vw;
+				margin: 0.5vw 0vw;
+				line-height: 3.5vw;
+			}
+
+			.title2 {
+				color: #3E3E3E;
+				text-align: left;
+				letter-spacing: 0.1vw;
+				font-size: 1.5vw;
+				font-family: 'Avenir Medium';
+				margin: 0.1vw 0vw;
+			}
+
+			.div1 {
+				width: 30%;
+				margin-top: -2vw;
+			}
+
+			.div2_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+			}
+
+			.div4_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-family: 'Avenir Light';
+				margin: 2vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+		</style>
+	</body>
+</html>
