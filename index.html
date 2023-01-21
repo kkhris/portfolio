@@ -18,7 +18,7 @@
 				style="padding-top:2vw; font-family: 'Avenir Medium';">
 				<el-tab-pane label="WORKS" name="./index.html">
 				</el-tab-pane>
-				<el-tab-pane label="ABOUT" name="./About.html">
+				<el-tab-pane label="ABOUT" name="./about.html">
 				</el-tab-pane>
 				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
 			</el-tabs>
@@ -32,12 +32,12 @@
 						HELLO! MY NAME IS CHRISTAL:)</div>
 					<div style="font-size: 1.2vw; line-height: 2.5vw;margin-top: 1vw;font-family: 'Avenir Light';">I am
 						a UX designer by day, portrait photographer at night.<br />
-						Based in Vancouver, BC & Toronto, ON.
+						Based in Vancouver, British Columbia.
 					</div>
 					<!-- <div style="font-size: 1vw;margin-top: 0.5vw;">Based in Vancouver, British Columbia.</div> -->
 					<div style="margin-top: 2vw;">
-						<el-button class="btn" onclick="toBottom()">Jump to my Projects</el-button>
-						<el-button class="btn" @click="toPage('./photography.html')">Jump to my Photographs</el-button>
+						<el-button style="cursor: pointer;" class="btn" onclick="toBottom()">Jump to my Projects</el-button>
+						<el-button style="cursor: pointer;" class="btn" @click="toPage('./photography.html')">Jump to my Photographs</el-button>
 					</div>
 				</div>
 
@@ -86,10 +86,8 @@
 					<div @click="toPage('./collection.html')"
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
-
-            <a href="Support/Christopher's Collection.html">
 						<img src="./img/index/PJ1.JPG" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" /> </a>
+							class="tograyscale" />
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">Graphic Design</el-button>
@@ -102,26 +100,23 @@
 							Chrisopher Ho</span>
 						<a href="#b3"
 							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
-							NEXT
-							PROJECT</a>
+							NEXT PROJECT</a>
 					</div>
 				</div>
-        
 				<!-- 内容板块3 -->
 				<div id="b3" style="padding-bottom: 10vw;" class="page_mark">
 					<div style="padding-top: 3vw;display: flex;align-items: center;">
 						<span
 							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
-							ENHANCE VERSION OF UBEREATS APP</span>
+							VERSION OF UBEREATS APP</span>
 						<el-divider>
 						</el-divider>
 					</div>
-					<div 
+					<div @click="toPage('./uber.html')"
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
-            <a href="Support/Uber 2.0.html">
 						<img src="./img/index/PJ2.png" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" /> </a>
+							class="tograyscale" />
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">User Experience Design</el-button>
@@ -147,13 +142,11 @@
 						<el-divider>
 						</el-divider>
 					</div>
-					<div
+					<div @click="toPage('./txp.html')"
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
-
-            <a href="Support/TXP.html">
 						<img src="./img/index/txp.jpg" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" /> </a>
+							class="tograyscale" />
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">Animation Design</el-button>
@@ -175,12 +168,12 @@
 					<div
 						style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
 						Let's Get In Touch!</div>
-						<div style="margin-top: 1vw;">
-							<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
-								style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
-							<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
-								style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
-						</div>
+					<div style="margin-top: 1vw;">
+						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
+						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
+					</div>
 					<div
 						style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
 						© Coded and Designed by Christal Lyu,
@@ -236,14 +229,6 @@
 				color: rgb(72, 71, 71);
 			}
 
-			a {
-				color: #939393;
-			}
-
-			a:hover {
-				color: #353535;
-			}
-
 			.btn {
 				width: 18vw;
 				height: 0vw;
@@ -281,6 +266,15 @@
 				opacity: 0.6;
 				filter: alpha(opacity=60);
 			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
 		</style>
 	</body>
 </html>
