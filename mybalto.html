@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Nunito', sans-serif;">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./about.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+			<!-- Content 1 -->
+			<div style="margin: 3vw 0px 14vw 0px;">
+				<div><img src="./img/mybalto/banner.png" style="width: 100%;border: 1px solid #d8d9da;" /></div>
+				<a href="https://www.figma.com/proto/Jnm2j9U4jdE8w7YZcjO7Xg/Magnet?type=design&node-id=1-7445&t=EDR21d9aJrr9MSDJ-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A7445&mode=design"><div class="title" style="margin: 2vw 0vw 3.2vw 0vw;"> MYBALTO CASE STUDY &crarr;</div></a> 
+				<div style="display: flex;justify-content: space-between;">
+					<div class="div1">
+						
+							<h2 class="title2">Role</h2>
+						
+						<div style="font-family: 'Nunito', sans-serif;font-weight:300; letter-spacing: 0.05vw; font-size: 1.4vw;">Product
+							Designer</div>
+					</div>
+					<div class="div1">
+						
+							<h2 class="title2">Team</h2>
+					
+						<div style="font-family: 'Nunito', sans-serif;font-size: 1.4vw;font-weight:300;  letter-spacing: 0.05vw;"> Amanda Griffin, Clarissa Koga</div>
+					</div>
+					<div class="div1">
+						
+							<h2 class="title2">Timeline</h2>
+						
+						<div style="font-family: 'Nunito', sans-serif;font-size: 1.4vw; font-weight:300; letter-spacing: 0.05vw;">June 2023 - July 2023</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project Brief -->
+			<div style="padding-top:7vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 36%;">
+					<div class="title">Introduction</div>
+					<p class="div2_P">
+						I joined MyBalto as a contract product designer in the summer of 2023. 
+						<br> <br>
+						During my time there, 
+						I worked with two talented designers, Amanda Griffin and Clarissa Koga, 
+						to shape the user experience and contribute to the development of MyBalto services.
+						<br> <br>
+				
+						To learn more about MyBalto, please <a
+						href="https://www.mybalto.com/">
+						click here</a> to visit our website :)
+					</p>
+				</div>
+				<div style="width: 55%; padding-top: 3vw;"><img src="./img/mybalto/mb.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Project Brief -->
+			<div style="padding-top:7vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 39%;">
+					<div class="title">Project Brief</div>
+					<p class="div2_P">
+						MyBalto is a pet health enterpise aiming to easing the financial burden of pet care for both owners and veterinarians. 
+						<br> <br>
+						Through earning cash back, pet treats and rewards, we provide opportunities to take the cost out of pet care. 
+						<br> <br>
+						<a
+							href="https://xd.adobe.com/view/cb089b29-792b-4113-81ad-4e233fc498aa-9e5b/">
+							Check out the High-Fidelity Prototype here.</a>
+					</p>
+				</div>
+				<div style="width: 55%; margin-top: -0.2vw;"><img src="./img/mybalto/poto2.png" style="width: 100%;" />
+				</div>
+			</div>
+
+            <!-- Problem -->
+			<div style="padding-top:6vw;display: flex;margin-bottom: 5.0vw;" class="page_mark">
+				<div style="width: 68%;">
+					<div class="title">Project Goal </div>
+					<p class="div2_P"> 
+						Steamlined and redesigned approach to the myBalto App's interface with the primary goal of elevating 
+						the overall user experience to a level that captivates our users.
+					</p>
+				</div>
+				<div style="width: 18%; margin-top: 2.2vw; margin-left: 7vw;"><img src="./img/mybalto/ok01.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			 <!-- Problem -->
+			 <div style="padding-top:3vw;display: flex;margin-bottom: 5.0vw;" class="page_mark">
+				<div style="width: 68%;">
+					<div class="title">Solution </div>
+					<p class="div2_P"> 
+						Outline the rewards program, covering earning, redeeming rewards or cashback, and 
+						streamlining access to vet bills and medical records.
+					</p>
+				</div>
+				<div style="width: 18%; margin-top: 2.2vw; margin-left: 7vw;"><img src="./img/mybalto/ok02.png" style="width: 100%;" />
+				</div>
+			</div>
+
+            <!-- Solution -->
+			<div style="padding-top:0vw;margin-bottom: 15vw;">
+				 <!-- Decision 1 -->
+				<div style="padding-top:3vw;padding-left: 3vw;margin-bottom: 10vw; width: 75%;">
+					<div class="title">Measure 1 </div>
+					<p class="div2_P"> <strong> <b>Reduce the confusion of the application interfaces</b></strong>
+						<br> <br>
+						MyBalto positioned itself as a reward/money-saving application. 
+						Users would receive rewards and cashback through each purchase. 
+						Currently, users are confused about the purpose of MyBalto and how to maximize its benefits.
+
+					</p>
+				</div>
+				
+				 <!-- Design 1 -->
+				<div style="padding-top:11vw;padding-left: 6vw; margin-bottom: 10vw; width: 33%;" class="page_mark">
+					<div class="title">Approach 1 - Improve Information Architecture</div>
+					<p class="div2_P"> Reorganize the information architecture to improve navigation by 
+						integrating shopping and saving functionalities. 
+						<br> <br>
+						Contents are categorized into sections 
+						<br>to optimize the user flow and reduce cognitive load. 
+					</p>
+				</div>
+
+				<div style="width: 28%; padding-left: 43vw; margin-bottom: 7vw; margin-top: -47vw;"><img src="./img/mybalto/mb01.png" style="width: 100%;border-radius: 3.9vw; 
+				" />
+				</div>
+
+				<!-- Design 2 -->
+				<div style="padding-top:12.5vw;text-align: right;padding-left: 42vw; margin-bottom: 5vw; width: 32%;" class="page_mark">
+					<div class="title">Approach 2 - Grouping and Sorting </div>
+					<p class="div2_P"> 
+						Having vet information and records accessible from the "My Pet" page creates a centralized location 
+						for pet-related data. Reduce navigationand help users access what they need.
+					</p>
+				</div>
+
+				<div style="width: 28%; padding-left: 6vw; margin-top: -37vw;"><img src="./img/mybalto/mb02.png" style="width: 100%;border-radius: 3.9vw;" />
+				</div>
+			</div>
+
+			 <!-- Decision 2 -->
+			<div style="padding-top:3vw;" class="page_mark">
+
+				<div style="padding-top:2vw; padding-left: 3vw; width: 75%;">
+					<div class="title">Measure 2 </div>
+					<p class="div2_P">  <strong> <b> Streamline Rewards System </b> </strong>
+						<br> <br>
+						MyBalto has various kinds of rewards, 
+						including treats, cash back, and money for vet bill reimbursement. 
+						However, users cannot tell the difference between these rewards and 
+						don’t know how to gain and redeem them.
+					</p>
+				</div>
+
+				<div style="width: 54%; margin-top: 0vw; margin-bottom: -15vw;margin-left: 0vw;"><img src="./img/magnet/research2.png" style="width: 100%;" />	
+				</div>
+
+				<!-- Design 3 -->
+				<div style="padding-top:13.5vw;padding-left: 6vw; width: 33%;" class="page_mark">
+					<div class="title">Approach 3 - Onboarding Page </div>
+					<p class="div2_P"> Onboarding Page
+						Design an onboarding screen for the rewards page that explains 
+						when and how users can receive the rewards, 
+						to reduce friction and make the user experience smoother						
+					</p>
+				</div>
+
+				<div style="width: 28%; padding-left: 43vw;margin-top: -35vw; margin-bottom: 9vw;"><img src="./img/mybalto/mb03.png" style="width: 100%;border-radius: 3.9vw; 
+				" />
+				</div>
+
+				<!-- Design 4 -->
+				<div style="padding-top:15vw;text-align: right;padding-left: 42vw; margin-bottom: 5vw; width: 33%;" class="page_mark">
+					<div class="title">Approach 4 - Clarifying Treats and Cashback
+					</div>
+					<p class="div2_P">Distinguished between Treat rewards and cashback earnings on the rewards page. 
+						Users can easily see how to earn treats and find ways to cash out or shop.
+						
+					</p>
+				</div>
+
+				<div style="width: 28%; padding-left: 6vw; margin-top: -37vw; margin-bottom: 9vw;"><img src="./img/mybalto/mb04.png" style="width: 100%;border-radius: 3.9vw; 
+				" />
+				</div>
+
+			</div>
+
+			<!-- User Research -->
+			<div style="padding-top:3.5vw; margin-bottom: 10vw;" class="page_mark">
+				<div class="title">UX Audit - <a
+					href="https://docs.google.com/presentation/d/15ascVZzmfm785Yimcql1ba0vvC7BRycngN3dgNuQ38U/edit?usp=sharing">
+					View More</a> </div>
+				<div style="padding-top:1vw; padding-left:4.5vw; margin-bottom: 2vw;"><img src="./img/mybalto/UXAudit.png" style="width: 96%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Wireframes -->
+			<div style="padding-top:3.5vw; margin-bottom: 7vw;" class="page_mark">
+				<div class="title">Wireframes</div>
+				<div style="width: 100%; margin-top: -1.3vw; margin-left: 1vw;"><img src="./img/mybalto/wireframe.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Testing Highlights -->
+			<div style="padding-top:3.5vw; margin-bottom: 7vw;" class="page_mark">
+				<div class="title">Testing Highlights I</div>
+				<div style="width: 100%; margin-top: 7vw;"><img src="./img/mybalto/test1.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Pain Points -->
+			<div style="padding-top:3.5vw; margin-bottom: 7vw;" class="page_mark">
+				<div class="title">Testing Highlights II</div>
+				<div style="width: 100%; margin-top: 7vw;"><img src="./img/mybalto/testing2.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+			<!-- Calendar Features -->
+			<div style="padding-top:4vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				
+				<div style="width: 46%;">
+					<div class="title">Learnings and Takeaways </div>
+					<p class="div2_P">
+						This was my first project as a solo designer. When I was going over my interview transcript, 
+						I was surprised to find that each user had a unique perspective and approach to networking.
+						<br><br>
+						I also learned colour psychology while picking the colour scheme for the application. 
+						It surprised me how various colours can significantly impact a user's impression.
+						<br><br>
+						Please let me know if you have any suggestions or critiques, I'm open to hearing them!
+					</p>
+				</div>
+				<div style="width: 45%; margin-left: 4vw; margin-top: 7vw;"><img src="./img/magnet/ac.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Foot -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 8vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Let's Get In Touch!</div>
+					<div style="margin-top: 1vw;">
+						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; font-weight:600; font-family: 'Nunito', sans-serif;">LinkedIn↗</a>
+						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; font-weight:600; font-family: 'Nunito', sans-serif;">Email↗</a>
+					</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-weight:300; font-family: 'Nunito', sans-serif;">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2023
+					<span  @click="scrollToTop"
+						style="text-decoration: underline;font-size: 1vw;color:black;font-weight:300; font-family: 'Nunito', sans-serif; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</span>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html"
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
+
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+			
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			.title {
+				font-size: 1.85vw;
+				font-weight:700; 
+				font-family: 'Nunito', sans-serif;
+				letter-spacing: 0.2vw;
+				margin: 1.5vw 0vw;
+				line-height: 3.5vw; 
+			}
+
+			.title2 {
+				color: #3E3E3E;
+				text-align: left;
+				letter-spacing: 0.1vw;
+				font-size: 1.5vw;
+				font-weight:600; 
+				font-family: 'Nunito', sans-serif;
+				margin: 0.1vw 0vw;
+			}
+
+			.div1 {
+				width: 30%;
+				margin-top: -2vw;
+			}
+
+			.div2_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-weight:300; 
+				font-family: 'Nunito', sans-serif;
+			}
+
+			.div4_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-weight:300; 
+				font-family: 'Nunito', sans-serif;
+				margin: 2vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+		</style>
+	</body>
+</html>
