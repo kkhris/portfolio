@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Nunito', sans-serif;">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./about.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+			<!-- Content 1 -->
+			<div style="margin: 3vw 0px 14vw 0px;">
+				<div><img src="./img/index/NUSISS.png" style="width: 100%;border: 1px solid #d8d9da;" /></div>
+                <div class="title" style="margin: 2vw 0vw 3.2vw 0vw;"> NUS-ISS INTERNSHIP</div>
+				<div style="display: flex;justify-content: space-between;">
+					<div class="div1">
+						
+							<h2 class="title2">Role</h2>
+						
+						<div style="font-family: 'Nunito', sans-serif;font-weight:300; letter-spacing: 0.05vw; font-size: 1.4vw;">Research Assistant (UX Research)</div>
+					</div>
+					<div class="div1">
+						
+							<h2 class="title2">Team</h2>
+					
+						<div style="font-family: 'Nunito', sans-serif;font-size: 1.4vw;font-weight:300;  letter-spacing: 0.05vw;"> Digital Innovation & Design (DID)</div>
+					</div>
+					<div class="div1">
+						
+							<h2 class="title2">Timeline</h2>
+						
+						<div style="font-family: 'Nunito', sans-serif;font-size: 1.4vw; font-weight:300; letter-spacing: 0.05vw;">May 2023 - August 2023</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project Brief -->
+			<div style="padding-top:7vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				<div style="width: 33%;">
+					<div class="title">Introduction</div>
+					<p class="div2_P">
+						Over the summer, I joined Institute of Systems Science at the National University of Singapore (NUS-ISS) as a research assistant.  
+						<br> <br>		
+                        I worked with the Digital Innovation and Design team on the content creation of <a href="https://www.iss.nus.edu.sg/blended-learning-programmes">Blended Learning Programmes </a>, 
+                        all in pursuit of improving student engagement and learning experiences.
+					</p>
+				</div>
+				<div style="width: 48%; padding-top: 2.5vw;"><img src="./img/nus/front2.png" style="width: 100%;" />
+				</div>
+			</div>
+
+            <!-- Project Highlights -->
+			<div style="padding-top:3.5vw; margin-bottom: 5vw;" class="page_mark">
+				<div class="title">Project Highlights</div>
+                <div style="width: 100%;">
+                <p class="div2_P">
+                    <strong><b>UX Research</b></strong> - Gather insights about students' motivations, needs, and pain points through research methods (e.g. interviews, usability testing etc.) 
+                    My interview transcript was also used as sample material in the UXD blended learning course.  
+                </p>
+                </div>
+				<div style="width: 100%; margin-top:3vw;"><img src="./img/nus/R1.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+            <!-- Project Highlights -->
+			<div style="padding-top:3vw; margin-bottom: 1.5vw;" class="page_mark">
+				<div class="title" style="color:transparent;">Project Highlights</div>
+                <div style="width: 100%;">
+                <p class="div2_P">
+                    <strong><b>Executive Education Programmes (EEP) Report Template</b></strong> - Propose a reusable report template that can help DID and other teams to monitor and improve course performance.
+                    Generated visualizations using real data for initial analysis and refining, followed by further assessments and improvements.  
+                </p>
+                </div>
+				<div style="width: 100%; margin-top:-1vw;"><img src="./img/nus/test.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+            <!-- Project Highlights -->
+			<div style="padding-top:2.5vw; margin-bottom: 5vw;" class="page_mark">
+				<div class="title" style="color:transparent;">Project Highlights</div>
+                <div style="width: 100%;">
+                <p class="div2_P">
+                    <strong><b>Explore Service Design Strategies</b></strong> - Participate as teaching assistant in Executive 
+                    Education Programmes and assist students in service design research. Guide students in generating
+                    jobs-to-be-done insights, creating affinity map etc.  
+                </p>
+                </div>
+				<div style="width: 100%; margin-top:3vw;"><img src="./img/nus/R3.png" style="width: 100%;" /></div>
+				<div>
+				</div>
+			</div>
+
+
+			<!-- Calendar Features -->
+			<div style="padding-top:4vw; display: flex;justify-content: space-between;margin-bottom: 14vw;" class="page_mark">
+				
+				<div style="width: 41%;">
+					<div class="title">Learnings and Takeaways </div>
+					<p class="div2_P">
+
+						Starting my first work term aboard at the Top 1 university in Asia was an extremely challenging 
+                        experience, especially when it comes to different communication styles and working culture. 
+
+						<br><br>
+						I mostly worked as a "problem solver" who designs and provides solutions directly to costumers. Here, 
+                        I am more like a "mediator," who translates customer insights to help stakeholders grasp and align 
+                        with the design direction. Shifting from a service provider mindset was tough, but it was definitely 
+                        insightful to approach different kind of design. 
+						
+					</p>
+				</div>
+				<div style="width: 48%; margin-left: 4vw; margin-top: 6vw;"><img src="./img/nus/R4.png" style="width: 100%;" />
+				</div>
+			</div>
+
+			<!-- Foot -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 8vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Let's Get In Touch!</div>
+					<div style="margin-top: 1vw;">
+						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; font-weight:600; font-family: 'Nunito', sans-serif;">LinkedIn↗</a>
+						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; font-weight:600; font-family: 'Nunito', sans-serif;">Email↗</a>
+					</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-weight:300; font-family: 'Nunito', sans-serif;">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2023
+					<span  @click="scrollToTop"
+						style="text-decoration: underline;font-size: 1vw;color:black;font-weight:300; font-family: 'Nunito', sans-serif; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</span>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html"
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
+
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+			
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			.title {
+				font-size: 1.85vw;
+				font-weight:700; 
+				font-family: 'Nunito', sans-serif;
+				letter-spacing: 0.2vw;
+				margin: 1.5vw 0vw;
+				line-height: 3.5vw; 
+			}
+
+			.title2 {
+				color: #3E3E3E;
+				text-align: left;
+				letter-spacing: 0.1vw;
+				font-size: 1.5vw;
+				font-weight:600; 
+				font-family: 'Nunito', sans-serif;
+				margin: 0.1vw 0vw;
+			}
+
+			.div1 {
+				width: 30%;
+				margin-top: -2vw;
+			}
+
+			.div2_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-weight:300; 
+				font-family: 'Nunito', sans-serif;
+			}
+
+			.div4_P {
+				letter-spacing: 0.05vw;
+				font-size: 1.3vw;
+				line-height: 3vw;
+				font-weight:300; 
+				font-family: 'Nunito', sans-serif;
+				margin: 2vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+		</style>
+	</body>
+</html>
